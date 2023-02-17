@@ -1,0 +1,48 @@
+// Base and Utils
+@import './utils/normalize';
+@import './utils/reset';
+@import './base/fonts';
+@import './utils/visually-hidden';
+@import './utils/vars';
+@import './utils/mixins';
+@import './base/container';
+
+// Components // Components
+// Components // Components
+
+@import './components/slider-trailer';
+
+//spinner
+@import './components/spinner';
+
+//buttons
+@import './components/button';
+
+//scrollTop
+@import './components/scrollTop.scss';
+
+// backdrop
+@import './components/backdrop';
+
+// pagination
+@import './components/pagination';
+
+// notifikashka
+@import './components/notifikashka';
+
+// Layout // Layout
+// Layout // Layout
+
+// header
+@import './layout/header/header';
+
+// main
+@import './layout/main/card-movies';
+@import './layout/main/film-modal';
+@import './layout/main/trailer';
+@import './layout/main/sign-in';
+
+// footer
+@import './layout/footer/footer';
+@import './layout/footer/footer-modal';
+@import './layout/footer/footer-authors-list';

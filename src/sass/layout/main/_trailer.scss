@@ -1,0 +1,93 @@
+.trailer__backdrop {
+  z-index: 5000;
+
+  background: #000000;
+}
+
+.trailer__modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 1200px;
+
+  padding: 0 32px;
+}
+
+.trailer__box {
+  position: relative;
+
+  width: 100%;
+  padding-top: 55%;
+}
+
+.trailer__iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4px;
+}
+
+.trailer__btn-close {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  top: 5px;
+  right: 35px;
+
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+
+  z-index: 10000;
+
+  opacity: 0;
+  visibility: hidden;
+
+  cursor: pointer;
+
+  .trailer__modal:focus &,
+  .trailer__modal:hover & {
+    stroke: $accent-color;
+
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.trailer__btn-close {
+  @media screen and (max-width: 320px) {
+    top: 5px;
+    right: 35px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    top: 10px;
+    right: 40px;
+
+    width: 23px;
+    height: 23px;
+  }
+}

@@ -1,0 +1,48 @@
+<div class="backdrop film-backdrop is-hidden">
+  <div class="modal">
+    <button class="modal__btn--close">
+      <svg width="30" height="30">
+        <use href="./images/sprite-svg.svg#film-modal-btn"></use>
+      </svg>
+    </button>
+
+    <div class="modal-container">
+      <button class="trailer__btn" type="button">
+        <svg class="trailer__icon" width="35" height="35">
+          <use href="./images/youtube-trailer.svg#youtube"></use>
+        </svg>
+      </button>
+      <div class="modal-card"></div>
+      <div class="modal__btn color-button add-remove-watched-queue-js">
+        <button
+          type="button"
+          name="addToWatched"
+          class="modal__btn--watched add-watched-js"
+        >
+          add to Watched
+        </button>
+        <button
+          type="button"
+          name="removeFromWatched"
+          class="modal__btn--watched remove-watched-js visually-hidden"
+        >
+          remove from Watched
+        </button>
+        <button
+          type="button"
+          name="addToQueue"
+          class="modal__btn--queue add-queue-js"
+        >
+          add to queue
+        </button>
+        <button
+          type="button"
+          name="removeFromQueue"
+          class="modal__btn--queue remove-queue-js visually-hidden"
+        >
+          remove from queue
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
