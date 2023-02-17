@@ -77,4 +77,3 @@ function onEscTrailer(e) {
     }
   }
 }
-// new
